@@ -1,0 +1,86 @@
+/*hero Section styles*/
+.hero--wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  gap: 5crem;
+}
+
+.hero--left--wrapper {
+  max-width: 360px;
+}
+
+.hero--imgwrapper {
+  max-width: 400px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.hero--heading {
+  font-family: poppins;
+  font-weight: 600;
+  line-height: 1.4em;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: var(--black-1);
+}
+
+.hero--info {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  color: var(--black-2);
+}
+
+.botton--wrapper {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero--wrapper {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .hero--left {
+    flex: 3;
+  }
+
+  .hero--right {
+    flex: 4;
+  }
+
+  .hero--heading {
+    font-size: 3.6rem;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+
+  .hero--info {
+    margin-bottom: 2rem;
+    text-align: left;
+    font-size: 1.8rem;
+  }
+
+  .botton--wrapper {
+    max-width: none;
+    width: 90%;
+  }
+
+  @keyframes fade-In {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  img {
+    animation: fadeIn 0.5s ease-in-out;
+    /* Use the fadeIn animation */
+  }
+}
